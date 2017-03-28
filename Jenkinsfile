@@ -9,12 +9,6 @@ node {
    // **       in the global configuration.           
    def mvnHome = tool 'M3'
    
-   stage('Sanity check') {
-            steps {
-                input "Does the staging environment look ok?"
-            }
-        }
-
    // Mark the code build 'stage'....
    stage 'Build and Test'
    // Run the maven build
